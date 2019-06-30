@@ -1,5 +1,5 @@
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {height: 660px;}
+.row.content {height: 570px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -7,10 +7,19 @@
   height: 100%;
 }
 
-.brand {
+.brand-image {
   margin-top: 5%;
+  width: 100px;
+  height: 120px;
 }
 
+.sigaa {
+  width: 100%;
+}
+.balls {
+  width: 100px;
+  height: 100px;
+}
 .brand-text {
 	margin-bottom: 20%;
 }

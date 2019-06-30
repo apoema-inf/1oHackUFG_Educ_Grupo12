@@ -31,3 +31,4 @@ def home():
 def project(project_id):
 	project = Pesquisa.query.get(project_id)
 	return render_template('project.html', project=project)
+	
