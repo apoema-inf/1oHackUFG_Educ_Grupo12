@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="table-responsive">
+      <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Codigo</th>
+                  <th scope="col">Periodo de Vigencia</th>
+              </tr>
+          </thead>
+          <tbody>
+          {% for project in projects %}
+              <tr id={{ project.id }}></tr>
+                  <td> <a href="/project/{{ project.id }}">{{ project.titulo }}</a></td>
+                  <td> {{ project.codigo }} </td>
+                  <td> {{ project.periodo_de_vigencia }} </td>
+              </tr>
+          {% endfor %}
+          </tbody>
+    	</table>
+    </div>
+{% endblock %}
